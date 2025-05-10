@@ -51,6 +51,9 @@ uploaded_file=st.file_uploader("Upload Your Resume",type="pdf",help="Please upla
 
 submit = st.button("Submit")
 
+st.text("NotFound: 404 models/gemini-pro is not found for API version v1beta, or is not supported for generateContent.\n"
+"Inconvenience caused is deeply regretted")
+
 if submit:
     if uploaded_file is not None:
         text=input_pdf_text(uploaded_file)
